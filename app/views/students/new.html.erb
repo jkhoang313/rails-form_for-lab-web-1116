@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Student Form</title>
+  </head>
+  <body>
+    <%= form_for Student.new do |f| %>
+      <%= f.label :first_name %>
+      <%= f.text_field :first_name %>
+      <%= f.label :last_name %>
+      <%= f.text_field :last_name %>
+      <%= f.submit %>
+    <% end %>
+  </body>
+</html>
